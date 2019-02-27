@@ -1,20 +1,12 @@
-// Main func
 function preloadImages(images){
-	'use strict';
-	console.log('Start loading')
 	for (let image of images){
-		let url = image.dataset.src;
-		console.log(url)
-		let img = new Image();
-		img.src = url;
-		img.onload = () => {
-			image.src = url;
+		let responsiveCheck = image.dataset.srcset ? true : false;
+		let url = image.dataset.srcset ? image.dataset.srcset : image.dataset.src;
+		//console.log(url);
+		let img_loader = new Image();
+		responsiveCheck == true ? img_loader.srcset = url : img_loader.src = url;
+		img_loader.onload = () => {
+			responsiveCheck == true ? image.srcset = url : image.src = url;
 		};
 	};
 }
-// Init
-document.addEventListener('DOMContentLoaded', function () {
-	'use strict';
-	var preloadImagesList = document.querySelectorAll('.g-image__preload');
-	preloadImages(preloadImagesList);
-})

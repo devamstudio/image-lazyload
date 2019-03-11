@@ -48,7 +48,7 @@
 
 ```html
 <script>
-	document.onload = function () {
+	window.onload = function () {
 		'use strict';
 		var preloadImagesList = document.querySelectorAll('.g-image__preload');
 		preloadImages(preloadImagesList);

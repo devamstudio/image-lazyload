@@ -24,6 +24,15 @@
 <script src="[pathtofile]/image-lazyload.js"></script>
 ```
 
+```html
+<img 
+	srcset="[placeholder] 622w, [placeholder] 1600w" 
+	data-srcset="[image] 622w, [image] 1600w" 
+	src="[helper]" 
+	class="g-image__lazyload">
+```
+*Скрипт умеет собирать адаптивные изображения*
+
 И после инициализировать сбор изображений. Мы используем для этого класс:
 
 ```html

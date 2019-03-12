@@ -15,6 +15,6 @@ function preloadImages(images){
 // Init
 document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
-	var preloadImagesList = document.querySelectorAll('.g-image__preload');
+	var preloadImagesList = document.querySelectorAll('.g-image__lazyload');
 	preloadImages(preloadImagesList);
 })

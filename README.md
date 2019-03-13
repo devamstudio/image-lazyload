@@ -64,3 +64,7 @@
 	}
 </script>
 ```
+
+## Поддержка
+
+* Тестировано: IE11, EDGE, Chrome, Firefox

@@ -1,12 +1,12 @@
 function preloadImages(images){
-	for (let image of images){
-		let responsiveCheck = image.dataset.srcset ? true : false;
-		let url = image.dataset.srcset ? image.dataset.srcset : image.dataset.src;
+	for (let i=0; i < images.length; i++){
+		let responsiveCheck = images[i].dataset.srcset ? true : false;
+		let url = images[i].dataset.srcset ? images[i].dataset.srcset : images[i].dataset.src;
 		//console.log(url);
 		let img_loader = new Image();
 		responsiveCheck == true ? img_loader.srcset = url : img_loader.src = url;
-		img_loader.onload = () => {
-			responsiveCheck == true ? image.srcset = url : image.src = url;
+		img_loader.onload = function(){
+			responsiveCheck == true ? images[i].srcset = url : images[i].src = url;
 		};
 	};
 }

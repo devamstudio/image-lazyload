@@ -1,0 +1,34 @@
+{
+  "name": "image-lazyload",
+  "version": "1.0.0",
+  "description": "Чтобы использовать данный скрипт вы можете его скачать, или установить [сабмодулем][submodules] в свой проект",
+  "main": "image-lazyload.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp-babel": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devamstudio/image-lazyload.git"
+  },
+  "keywords": [
+    "image",
+    "load",
+    "lazy"
+  ],
+  "author": "iAmStudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devamstudio/image-lazyload/issues"
+  },
+  "homepage": "https://github.com/devamstudio/image-lazyload#readme"
+}

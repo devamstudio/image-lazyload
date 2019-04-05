@@ -9,4 +9,4 @@ function preloadImages(images){
 			responsiveCheck == true ? image.srcset = url : image.src = url;
 		};
 	};
-};
+}

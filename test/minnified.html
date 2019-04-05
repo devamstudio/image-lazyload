@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Default use</title>
+	<script src="../dist/image-lazyload.min.js"></script>
+	<style>
+		.container{
+			width: 800px;
+			max-width: 100%;
+			margin: auto;
+		}
+		.row {
+			display: flex;
+		}
+		.col {
+			display: block;
+			margin: 15px;
+		}
+		.col img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col"><img src="src/image-placeholder.gif" data-src="src/image_1.png" class="image__lazyload"></div>
+			<div class="col"><img src="src/image-placeholder.gif" data-src="src/image_2.png" class="image__lazyload"></div>
+			<div class="col"><img src="src/image-placeholder.gif" data-src="src/image_3.png" class="image__lazyload"></div>
+			<div class="col"><img src="src/image-placeholder.gif" data-src="src/image_4.png" class="image__lazyload"></div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			'use strict';
+			var preloadImagesList = document.querySelectorAll('.image__lazyload');
+			preloadImages(preloadImagesList);
+		})
+	</script>
+</body>
+</html>
